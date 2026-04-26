@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --animate-blink: blink 0.8s both;
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.4;
+    }
+    10% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 0.55;
+    }
+    20% {
+      opacity: 0.55;
+    }
+    25% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 0.7;
+    }
+    40% {
+      opacity: 0.7;
+    }
+    45% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.85;
+    }
+    65% {
+      opacity: 0.85;
+    }
+    70% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes runAround {
+    0% {
+      top: 0;
+      left: 0;
+      transform: scaleX(-1);
+      transform: rotate(180deg);
+    }
+    25% {
+      top: 0;
+      left: calc(100% - 4.5rem);
+      transform: scaleX(-1);
+      transform: rotate(180deg);
+    }
+    25.01% {
+      transform: rotate(-90deg);
+    }
+    50% {
+      top: calc(100vh - 4.5rem);
+      left: calc(100% - 4.5rem);
+      transform: rotate(-90deg);
+    }
+    50.01% {
+      transform: scaleX(1);
+    }
+    75% {
+      top: calc(100vh - 4.5rem);
+      left: 0;
+      transform: scaleX(1);
+    }
+    75.01% {
+      transform: rotate(90deg);
+    }
+    100% {
+      top: 0;
+      left: 0;
+      transform: rotate(90deg);
+    }
+  }
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
