@@ -3,6 +3,7 @@ import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import RunningCat from "./components/RunningCat";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Skills />
       <Portfolio />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

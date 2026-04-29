@@ -134,30 +134,30 @@ export default function Hero() {
             Front-end Developer
           </h1>
 
-          <div className="flex items-center justify-center md:justify-start space-x-8">
+          <div className="flex items-center justify-center md:justify-start space-x-6 md:space-x-8">
             <a
-              className="group flex items-center space-x-3 text-red-500"
+              className="group flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full text-red-500 transition-all duration-300 bg-[#111111] shadow-[4px_4px_8px_#070707,-4px_-4px_8px_#1b1b1b] hover:shadow-[inset_4px_4px_8px_#070707,inset_-4px_-4px_8px_#1b1b1b] md:bg-[#f8f9fa] md:shadow-[5px_5px_10px_rgba(0,0,0,0.1),-5px_-5px_10px_rgba(255,255,255,1)] md:hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.1),inset_-5px_-5px_10px_rgba(255,255,255,1)]"
               href="https://www.youtube.com/@BaoA-pl9co"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube className="text-3xl md:text-4xl" />
+              <FaYoutube className="text-2xl md:text-3xl group-hover:scale-90 transition-transform duration-300" />
             </a>
             <a
-              className="group flex items-center space-x-3 text-blue-500 transition-colors"
+              className="group flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full text-blue-500 transition-all duration-300 bg-[#111111] shadow-[4px_4px_8px_#070707,-4px_-4px_8px_#1b1b1b] hover:shadow-[inset_4px_4px_8px_#070707,inset_-4px_-4px_8px_#1b1b1b] md:bg-[#f8f9fa] md:shadow-[5px_5px_10px_rgba(0,0,0,0.1),-5px_-5px_10px_rgba(255,255,255,1)] md:hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.1),inset_-5px_-5px_10px_rgba(255,255,255,1)]"
               href="https://www.facebook.com/ta.tran.gia.bao?locale=vi_VN"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="text-3xl md:text-4xl" />
+              <FaFacebook className="text-2xl md:text-3xl group-hover:scale-90 transition-transform duration-300" />
             </a>
             <a
-              className="group flex items-center space-x-3 text-blue-600 transition-colors"
+              className="group flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full text-blue-600 transition-all duration-300 bg-[#111111] shadow-[4px_4px_8px_#070707,-4px_-4px_8px_#1b1b1b] hover:shadow-[inset_4px_4px_8px_#070707,inset_-4px_-4px_8px_#1b1b1b] md:bg-[#f8f9fa] md:shadow-[5px_5px_10px_rgba(0,0,0,0.1),-5px_-5px_10px_rgba(255,255,255,1)] md:hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.1),inset_-5px_-5px_10px_rgba(255,255,255,1)]"
               href="https://www.linkedin.com/in/bao-ta-tran-gia-054a20395/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-3xl md:text-4xl" />
+              <FaLinkedin className="text-2xl md:text-3xl group-hover:scale-90 transition-transform duration-300" />
             </a>
           </div>
         </div>

@@ -1,33 +1,46 @@
+import CV from "../assets/cv/Ta-Tran-Gia-Bao-TopCV.vn-270426.95410.pdf";
+
 export default function AboutMe({ Me, Open }) {
   return (
-    <div className="hidden md:absolute md:right-[5%] md:bottom-10 z-10 md:group md:flex justify-center">
-      <div className="relative">
+    <div className="hidden md:flex flex-col items-center justify-center absolute right-[8%] top-1/2 -translate-y-1/2 z-40 w-full max-w-[340px]">
+      {/* Floating Circular Image */}
+      <div className="relative mb-8 animate-float group/img">
         <img
           src={Me}
           alt="Tạ Trần Gia Bảo"
-          className="
-            h-[300px] w-[250px] md:h-[450px] md:w-[350px] cursor-pointer object-cover 
-            transition-all duration-700 ease-in-out
-            [clip-path:polygon(50%_2.45%,100%_38.77%,80.9%_97.55%,19.1%_97.55%,0%_38.77%)]
-            group-hover:[clip-path:polygon(50%_0%,100%_0%,100%_100%,0%_100%,0%_0%)]
-            shadow-2xl
-          "
+          className="h-[220px] w-[220px] rounded-full object-cover shadow-[0_0_40px_rgba(255,98,0,0.5)] border-[5px] border-[#ff6200] transition-transform duration-500 group-hover/img:scale-105"
         />
+        {/* Glow inner effect */}
+        <div className="absolute inset-0 rounded-full shadow-[inset_0_0_20px_rgba(255,255,255,0.4)] pointer-events-none"></div>
+      </div>
 
-        <button
-          onClick={Open}
-          className="
-            text-white font-bold
-            absolute bottom-4
-            left-1/2 -translate-x-1/2
-            bg-[#ff6200] p-3 px-6 rounded-full border border-white/20 z-10
-            opacity-0 group-hover:opacity-100 transition-opacity duration-500
-            hover:scale-110 active:scale-95 shadow-xl
-            uppercase text-[10px] md:text-xs tracking-widest
-          "
-        >
-          Xem thêm
-        </button>
+      {/* Content */}
+      <div className="text-center w-full">
+        <h2 className="text-2xl font-black mb-4 uppercase tracking-widest text-white drop-shadow-lg">
+          Giới thiệu bản thân
+        </h2>
+        <p className="text-gray-400 text-sm leading-[1.8] mb-8 line-clamp-3 text-justify">
+          Là một Front-end Developer tràn đầy nhiệt huyết, tôi luôn đam mê sáng tạo những giao diện web hiện đại, mượt mà và tối ưu hóa trải nghiệm người dùng trên mọi nền tảng.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex items-center justify-center space-x-5 relative z-50">
+          <a
+            href={CV}
+            download="Ta-Tran-Gia-Bao-CV.pdf"
+            className="flex-1 px-4 py-3 rounded-full border-2 border-[#ff6200] text-[#ff6200] font-bold text-sm tracking-wider uppercase transition-all duration-300 hover:bg-[#ff6200] hover:text-white shadow-lg hover:shadow-[#ff6200]/40 text-center cursor-pointer"
+          >
+            Tải CV
+          </a>
+          <a
+            href="https://github.com/ttgBao"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 px-4 py-3 rounded-full bg-[#ff6200] border-2 border-[#ff6200] text-white font-bold text-sm tracking-wider uppercase transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(255,98,0,0.4)] hover:shadow-[0_0_30px_rgba(255,98,0,0.6)] text-center cursor-pointer"
+          >
+            Dự án
+          </a>
+        </div>
       </div>
     </div>
   );
