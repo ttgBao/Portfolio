@@ -12,7 +12,7 @@ export default function Portfolio() {
   const projects = [
     { 
         img: kfc, 
-        title: "Đồ án fe về website KFC", 
+        title: "Đồ án FE về website KFC", 
         link: "https://ttgbao.github.io/DoAn_Fe1/" 
     },
     { 
