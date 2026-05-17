@@ -123,7 +123,7 @@ export default function Hero() {
       {/* Main Content */}
       <div className="relative z-10 flex flex-col justify-center min-h-screen px-6 md:px-[10%] lg:px-[12%]">
         <div className="max-w-2xl text-center md:text-left">
-          <h1 className="text-xl md:text-2xl mb-4 md:mb-6 font-medium text-gray-400">Xin chào, tôi là </h1>
+          <h1 className="text-xl md:text-2xl mb-4 md:mb-6 font-medium text-gray-400">Hello, I am </h1>
           <h1 className="font-extrabold text-4xl sm:text-4xl md:text-4xl mb-4 text-black leading-tight md:leading-none tracking-tight">
             <div className="flex flex-wrap justify-center md:justify-start gap-x-4">
               <BlinkText text="Tạ Trần" />

@@ -9,7 +9,7 @@ export default function Footer() {
             <BlinkText text="IT Tạ Trần Gia Bảo" />
           </h1>
           <p className="text-gray-400 max-w-md leading-relaxed italic">
-            "Sống là để chinh phục, phải từng cố gắng mới từng thất bại, thử lần nữa, thất bại lần nữa, thất bại để tốt hơn."
+            "Life is meant to be conquered. You must have tried to have failed. Try again, fail again, fail better."
           </p>
         </div>
         

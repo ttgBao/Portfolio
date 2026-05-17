@@ -15,7 +15,7 @@ export default function SeeMore({ isPacked, Me, Off }) {
 
         <div className="p-8">
           <h1 className="text-3xl font-bold text-black mb-8 text-center uppercase tracking-wider underline decoration-[#ff6200] decoration-4 underline-offset-8">
-            Điểm du lịch Núi Chứa Chan
+            Chua Chan Mountain
           </h1>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -31,7 +31,7 @@ export default function SeeMore({ isPacked, Me, Off }) {
           </div>
           
           <p className="mt-8 text-gray-600 text-center leading-relaxed">
-            Khám phá vẻ đẹp hùng vĩ của Núi Chứa Chan - Gia Lào, nơi gắn liền với những kỷ niệm và trải nghiệm đáng nhớ trong hành trình của tôi.
+            Explore the majestic beauty of Chua Chan Mountain - Gia Lao, a place filled with unforgettable memories and experiences from my journey.
           </p>
         </div>
       </div>

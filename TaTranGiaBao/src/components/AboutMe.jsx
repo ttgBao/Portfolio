@@ -17,10 +17,10 @@ export default function AboutMe({ Me, Open }) {
       {/* Content */}
       <div className="text-center w-full">
         <h2 className="text-2xl font-black mb-4 uppercase tracking-widest text-white drop-shadow-lg">
-          Giới thiệu bản thân
+          About Me
         </h2>
         <p className="text-gray-400 text-sm leading-[1.8] mb-8 line-clamp-3 text-justify">
-          Là một Front-end Developer tràn đầy nhiệt huyết, tôi luôn đam mê sáng tạo những giao diện web hiện đại, mượt mà và tối ưu hóa trải nghiệm người dùng trên mọi nền tảng.
+          As an enthusiastic Front-end Developer, I am always passionate about creating modern, smooth web interfaces and optimizing user experiences across all platforms.
         </p>
 
         {/* Buttons */}
@@ -30,7 +30,7 @@ export default function AboutMe({ Me, Open }) {
             download="Ta-Tran-Gia-Bao-CV.pdf"
             className="flex-1 px-4 py-3 rounded-full border-2 border-[#ff6200] text-[#ff6200] font-bold text-sm tracking-wider uppercase transition-all duration-300 hover:bg-[#ff6200] hover:text-white shadow-lg hover:shadow-[#ff6200]/40 text-center cursor-pointer"
           >
-            Tải CV
+            Download CV
           </a>
           <a
             href="https://github.com/ttgBao"
@@ -38,7 +38,7 @@ export default function AboutMe({ Me, Open }) {
             rel="noopener noreferrer"
             className="flex-1 px-4 py-3 rounded-full bg-[#ff6200] border-2 border-[#ff6200] text-white font-bold text-sm tracking-wider uppercase transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(255,98,0,0.4)] hover:shadow-[0_0_30px_rgba(255,98,0,0.6)] text-center cursor-pointer"
           >
-            Dự án
+            Projects
           </a>
         </div>
       </div>

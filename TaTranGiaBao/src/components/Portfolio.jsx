@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import bgc from "../assets/image 12.png";
 import baibao from "../assets/baibao.jpeg";
 import docu from "../assets/docu.png";
@@ -8,24 +8,39 @@ import quizz from "../assets/quizz.jpeg";
 import kfc from "../assets/kfc.jpeg";
 
 export default function Portfolio() {
-  // Thêm thuộc tính link vào từng object trong mảng
+  const [activeTab, setActiveTab] = useState("ALL");
+
+  // Add link property to each object in the array
   const projects = [
     { 
         img: kfc, 
-        title: "Đồ án FE về website KFC", 
-        link: "https://ttgbao.github.io/DoAn_Fe1/" 
+        title: "FE project on KFC website", 
+        link: "https://ttgbao.github.io/DoAn_Fe1/",
+        category: "CODED"
     },
     { 
         img: baibao, 
-        title: "Đồ án fullstack về website báo trí", 
-        link: "https://github.com/ttgBao/doAn_Be1" 
+        title: "Fullstack project on news website", 
+        link: "https://github.com/ttgBao/doAn_Be1",
+        category: "CODED"
     },
     { 
         img: money, 
-        title: "Đồ án python nhận dạng tiền Việt Nam", 
-        link: "https://github.com/ttgBao/DoAn_python-NhanDangTienVN" 
+        title: "Python project for Vietnamese currency recognition", 
+        link: "https://github.com/ttgBao/DoAn_python-NhanDangTienVN",
+        category: "CODED"
     },
+    {
+        img: docu,
+        title: "Second-hand app design",
+        link: "https://www.figma.com/design/aqbM9a9Le1UsLw1mXLimzn/TaTranGiaBao?node-id=0-1&t=Cem9tOGV7o2GDcsQ-0",
+        category: "DESIGNED"
+    }
   ];
+
+  const filteredProjects = projects.filter(project => 
+    activeTab === "ALL" ? true : project.category === activeTab
+  );
 
   return (
     <div id="portfolio" className="w-full scroll-mt-20">
@@ -51,8 +66,9 @@ export default function Portfolio() {
           {["ALL", "CODED", "DESIGNED"].map((tab, i) => (
             <div
               key={tab}
+              onClick={() => setActiveTab(tab)}
               className={`flex-1 text-center font-bold tracking-widest cursor-pointer transition-all duration-300 hover:scale-110 ${
-                i === 0 ? "text-white" : "text-gray-500 hover:text-white"
+                activeTab === tab ? "text-white" : "text-gray-500 hover:text-white"
               }`}
             >
               {tab}
@@ -63,12 +79,16 @@ export default function Portfolio() {
         {/* Decor Line */}
         <div className="relative w-full max-w-2xl mt-6">
           <div className="w-full h-[2px] bg-gray-800"></div>
-          <div className="absolute top-0 left-0 w-1/3 h-[2px] bg-[#ff6200] transition-all duration-500"></div>
+          <div className={`absolute top-0 h-[2px] bg-[#ff6200] transition-all duration-500 ${
+            activeTab === 'ALL' ? 'left-0 w-1/3' : 
+            activeTab === 'CODED' ? 'left-1/3 w-1/3' : 
+            'left-2/3 w-1/3'
+          }`}></div>
         </div>
 
         {/* Grid Projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10 max-w-7xl">
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <a 
               key={index} 
               href={project.link} 

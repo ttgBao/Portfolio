@@ -56,7 +56,7 @@ export default function Skills() {
       </button>
 
       <p className="animate-on-scroll opacity-0 translate-y-20 transition-all duration-700 ease-out relative z-10 text-gray-400 text-center max-w-2xl px-4 leading-relaxed italic">
-        "Học tại Trường Cao Đẳng Công Nghệ Thủ Đức (Thu Duc College of Technology)"
+        "Studied at Thu Duc College of Technology"
       </p>
 
       <h3 className="animate-on-scroll opacity-0 translate-y-20 transition-all duration-700 ease-out delay-100 relative z-10 font-bold border-x-4 border-white text-xl px-8 uppercase tracking-wider text-white">
@@ -67,19 +67,19 @@ export default function Skills() {
         <div className="animate-on-scroll opacity-0 translate-y-20 transition-all duration-700 ease-out delay-200 max-w-xs text-center">
           <h3 className="font-bold text-xl mb-4 text-white underline decoration-[#ff6200] underline-offset-8">DESIGN</h3>
           <p className="text-sm text-gray-400 leading-relaxed">
-            Trước tiên tôi sẽ tư vấn website cho bạn khi đã đáp ứng được nhu cầu và đề xuất tôi sẽ tiến hành triển khai dự án.
+            First, I will consult with you about the website. Once your needs are met and proposals are approved, I will proceed to implement the project.
           </p>
         </div>
         <div className="animate-on-scroll opacity-0 translate-y-20 transition-all duration-700 ease-out delay-300 max-w-xs text-center">
           <h3 className="font-bold text-xl mb-4 text-white underline decoration-[#ff6200] underline-offset-8">DEVELOPMENT</h3>
           <p className="text-sm text-gray-400 leading-relaxed">
-           Sau khi thu thập đủ thông tin tôi sẽ triển khai dự án và đưa ra bản final version để bàn giao cho bạn.
+           After gathering enough information, I will deploy the project and deliver the final version to you.
           </p>
         </div>
         <div className="animate-on-scroll opacity-0 translate-y-20 transition-all duration-700 ease-out delay-400 max-w-xs text-center">
           <h3 className="font-bold text-xl mb-4 text-white underline decoration-[#ff6200] underline-offset-8">MAINTENANCE</h3>
           <p className="text-sm text-gray-400 leading-relaxed">
-            Yên tâm vì chúng tôi sẽ luôn có các quy trình bảo trì phần mềm cho bạn khi sử dụng dịch vụ phía công ty.
+            Rest assured, as we always have software maintenance processes in place for you when using our services.
           </p>
         </div>
       </div>
